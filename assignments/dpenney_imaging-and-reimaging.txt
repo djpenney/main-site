@@ -1,0 +1,26 @@
+Daniel Penney
+3/14/2013
+Imaging and Re-Imaging
+
+1) Re-imaging is the process of restoring a system to a default state in software.
+	a. Backup all important data to another drive by using a working system.
+	b. Insert the disk of the software you originally used to image the system and reboot.
+	c. Start the reimaging process as per the instructions for your software.
+	d. Depending on how large the image file was, this process might take one to several hours.
+
+2) 
+	a. Install and configure all the software you need on one system and make an image of that drive.
+	b. With each system you need to deploy, insert the disk of the imaging software, reboot, and start the imaging process.
+
+3) N/A
+
+4) Clonezilla and EaseUS Disk Copy.
+
+5) 
+	a. A system needs a new drive because the old one crashed.
+	b. Operating system becomes unbootable due to user error or malware.
+	c. Multiple systems need to be set up in a short amount of time.
+
+6) There will be many times where a system drive will crash, a laptop/desktop will become "destroyed", or a batch of systems will need to be configured.  Knowing how to image a system provides you with an efficient method of completing the task.
+
+7) Any documents and settings that haven't been backed up properly will be lost after the imaging process.  If there is software that you need or don't need, you'd need to add or remove it after imaging.

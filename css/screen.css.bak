@@ -1,0 +1,174 @@
+html {
+	min-width: 960px;
+	max-width: 1280px;
+	margin: 0 auto 0 auto;
+	background: #fff;
+	color: #000;
+}
+
+body {
+	font-family: Verdana, sans-serif;
+	font-size: 11pt;	
+}
+
+#page {
+	width: 90%;
+	margin: 50px auto 50px auto;
+	padding: 20px;
+	background: #ccc;
+	border: 2px solid #888;
+}
+
+/* Header Section */
+
+#header {
+	width: 90%;
+	margin: 0 auto 0 auto;
+	background: #4671D5;
+	border: 1px solid #06266F;
+	border-radius: 10px;
+	text-align: center;
+}
+
+#header h1 {
+	color: #6C8CD5;
+	text-shadow: 0px 0px 10px rgba(0, 0, 0, 1);
+}
+
+#header h1 a {
+	color: inherit;
+	text-decoration: none;
+}
+
+/* Links Section */
+
+#links {
+	margin-top: 10px;
+}
+
+#links nav {
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+}
+
+#links a {
+	padding: 2px 5px 2px 5px;
+	margin: 0 5px 0 5px;
+	text-decoration: none;
+	border: 1px solid #A65F00;
+	border-radius: 5px;
+	background: #FFBF40;
+	color: #222;
+}
+
+#links a:link {
+	font-weight: bold;
+}
+
+#links a:hover {
+	background: #FA0;
+}
+
+/* Body */
+
+#body {
+	margin-top: 10px;
+}
+
+/* Other Stuff */
+
+#headshot {
+	float: right;
+	width: 250px;
+	margin-right: 20px;
+	margin-left: 20px;
+	margin-bottom: 20px;
+}
+
+.center {
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;	
+}
+
+.lfloat  { float: left; }
+.rfloat  { float: right; }
+
+hr {
+	clear: both;
+}
+
+.tcenter {
+	text-align:center;
+}
+
+/* Resume */
+#resume h3,h4 {
+}
+
+/* Schedule */
+#schedule {
+	text-align: center;
+}
+
+#schedule table {
+	background: #FFF;
+	font-family: Verdana, Geneva, sans-serif;
+	width: 100%;
+	min-height: 484px;
+}
+
+#schedule .ise {
+/*	background: #FF7400; */
+	background: #f5b53d;
+}
+
+#schedule .pro {
+/*	background: #F00; */
+	background: #de575b;
+}
+
+#schedule .bc {
+/*	background: #F16D95; */
+	background: #f2c4da;
+}
+
+#schedule .illc {
+/*	background: #8243D6; */
+	background: #a4bfe0;
+}
+
+#schedule .illf {
+/*	background: #FFDE40; */
+	background: #faef59;
+}
+
+#schedule .tte {
+/*	background: #1240AB; */
+	background: #2478b3;
+}
+
+#schedule .ppl {
+/*	background: #8243D6; */
+	background: #bfafcb;
+}
+
+#schedule .gre {
+/*	background: #4BAB4B; */
+	background: #c2d461;
+}
+
+/* Portfolio */
+#portfolio .bold {
+	font-weight: bold;
+}
+
+#portfolio table tr td {
+	padding: 5px 10px 5px 10px;
+}
+
+#portfolio h4 {
+	padding: 0px;
+	margin: 0px;
+}

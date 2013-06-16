@@ -1,0 +1,189 @@
+<div class="schedule pure-u-1">
+<!-- http://www.jshint.com/  |  http://www.jslint.com/ -->
+<script>
+/*global document: false */
+var hasRun = false;
+var classA = document.getElementsByClassName("A");
+var classB = document.getElementsByClassName("B");
+/*
+var calcSec = function(hrs, min) {
+    return hrs*3600 + min*60;
+};
+
+window.onload = function() {
+    var dd = new Date(), b = 0, gSched = document.getElementById("sched");
+    var startTimes = ["8:30","9:50","10:10","11:30","12:30","13:50","14:10","15:30"];
+    var curSecTime = calcSec(dd.getHours(), dd.getMinutes());
+
+    // Compare current time to startTimes and get a time corresponding to one on the table sched
+    for (b; b<startTimes.length; b++) {
+        var sTimes = startTimes[b].split(":");
+        if(curSecTime <= calcSec(sTimes[0], sTimes[1])) {
+            alert("Found your times: " + curSecTime + " <= " + calcSec(sTimes[0], sTimes[1]) + ". " + startTimes[b-1]);
+            var curTimeS = startTimes[b-1];
+            break;
+        }
+    }
+
+    // Grab a table based off day of the week and time we got above
+    // ClassA = Date.row + 0
+    // ClassB = Date.row + 1
+    for(var c = 2; c<startTimes.length; c++) {
+        if( curTimeS === gSched.rows[c].cells[0].innerHTML) {
+            var aClass = gSched.rows[c].cells[4].innerHTML;
+            var bClass = gSched.rows[c].cells[5].innerHTML;
+            alert(gSched.rows[c].cells[4].innerHTML);
+        }
+    }
+
+    // Set the div elements with the HTML from the table
+    document.getElementById("curA").innerHTML = aClass;
+    document.getElementById("curB").innerHTML = bClass;
+};
+*/
+var hideClass = function(className) {
+    "use strict";
+
+    /* Set up the list of elements */
+    var toShow = [], toHide = [], x = 0;
+
+    /* Determine if we're showing class A/B */
+    if (className === "B") {
+        toShow = classA;
+        toHide = classB;
+    } else { // Show B
+        toShow = classB;
+        toHide = classA;
+    }
+
+    for (x; x < toHide.length; x += 1) {
+        toHide[x].style.display = 'none';
+        if (hasRun) { toShow[x].style.display = 'table-cell'; }
+        toShow[x].setAttribute("colspan", 2);
+    }
+
+    hasRun = true;
+};
+
+var resetPage = function() {
+    "use strict";
+
+    // Reset hasRun and clear all attributes
+    var z = 0;
+
+    for (z; z < classA.length; z += 1) {
+        classA[z].style.display = 'table-cell';
+        classA[z].setAttribute("colspan", 1);
+        classB[z].style.display = 'table-cell';
+        classB[z].setAttribute("colspan", 1);
+    }
+};
+</script>
+
+<br>
+
+<button class="pure-button pure-button-primary" id="sectionA" onclick='hideClass("B");'>Only Section A</button>
+<button class="pure-button pure-button-primary" id="sectionB" onclick='hideClass("A");'>Only Section B</button>
+<button class="pure-button pure-button-secondary" id="resetPage" onclick='resetPage();'>Full Schedule</button>
+
+<hr />
+
+<!-- In honor of our colleague, Jeff. -->
+<table border=1 id="sched">
+  <tbody>
+    <tr>
+      <td></td>
+      <td colspan="2">Monday</td>
+      <td colspan="2">Tuesday</td>
+      <td colspan="2">Wednesday</td>
+      <td colspan="2">Thursday</td>
+      <td colspan="2">Friday</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td class="A">Section A</td>
+      <td class="B">Section B</td>
+      <td class="A">Section A</td>
+      <td class="B">Section B</td>
+      <td class="A">Section A</td>
+      <td class="B">Section B</td>
+      <td class="A">Section A</td>
+      <td class="B">Section B</td>
+      <td class="A">Section A</td>
+      <td class="B">Section B</td>
+    </tr>
+    <tr>
+      <td rowspan="2">8:30</td>
+      <td colspan="2" class="gre">Monday Morning Kickoff<br />8:30-9:30</td>
+      <td rowspan="2" class="ise A">I.S.E.<br />Fred<br /><br />Training Room #1</td>
+      <td rowspan="2" class="pro B">Pro Skills<br />Nancy<br /><br />Training Room #2</td>
+      <td rowspan="2" class="bc A">Bus. Comm.<br />Ashley<br /><br />Training Room #2</td>
+      <td rowspan="2" class="illc B">I.L.L.<br />Chi Chi<br /><br />Training Room #1</td>
+      <td rowspan="2" class="pro A">Pro Skills<br />Nancy<br /><br />Training Room #2</td>
+      <td rowspan="2" class="ise B">I.S.E.<br />Fred<br /><br />Training Room #1</td>
+      <td rowspan="2" class="bc A">Bus. Comm.<br />Ashley<br /><br />Training Room #2</td>
+      <td rowspan="2" class="illc B">I.L.L.<br />Chi Chi<br /><br />Training Room #1</td>
+    </tr>
+    <tr>
+      <td colspan="2" class="ppl">Advising/Academic Skills<br />9:00-9:50</td>
+    </tr>
+    <tr>
+      <td>9:50</td>
+      <td colspan="2">Break<br />9:50-10:10</td>
+      <td colspan="2">Break<br />9:50-10:10</td>
+      <td colspan="2">Break<br />9:50-10:10</td>
+      <td colspan="2">Break<br />9:50-10:10</td>
+      <td colspan="2">Break<br />9:50-10:10</td>
+    </tr>
+    <tr>
+      <td>10:10</td>
+      <td class="tte A">T.T.E.<br />Chi Chi<br /><br />Tech Lab</td>
+      <td class="ise B">I.S.E.<br />Fred<br /><br />Training Room #1</td>
+      <td class="pro A">Pro Skills<br />Nancy<br /><br />Training Room #2</td>
+      <td class="ise B">I.S.E.<br />Fred<br /><br />Training Room #1</td>
+      <td class="illf A">I.L.L.<br />Fred<br /><br />Training Room #1</td>
+      <td class="bc B">Bus. Comm.<br />Ashley<br /><br />Training Room #2</td>
+      <td class="ise A">I.S.E.<br />Fred<br /><br />Training Room #1</td>
+      <td class="pro B">Pro Skills<br />Nancy<br /><br />Training Room #2</td>
+      <td class="illf A">I.L.L.<br />Fred<br /><br />Training Room #1</td>
+      <td class="bc B">Bus. Comm.<br />Ashley<br /><br />Training Room #2</td>
+    </tr>
+    <tr>
+      <td>11:30</td>
+      <td colspan="2">Lunch<br />11:30-12:30</td>
+      <td colspan="2">Lunch<br />11:30-12:30</td>
+      <td colspan="2">L&amp;D Students Dismissed At<br />11:30</td>
+      <td colspan="2">Lunch<br />11:30-12:30</td>
+      <td colspan="2">Lunch<br />11:30-12:30</td>
+    </tr>
+    <tr>
+      <td>12:30</td>
+      <td class="ise A">I.S.E.<br />Fred<br /><br />Training Room #1</td>
+      <td class="bc B">Bus. Comm.<br />Ashley<br /><br />Training Room #2</td>
+      <td class="bc A">Bus. Comm.<br />Ashley<br /><br />Training Room #2</td>
+      <td class="tte B">T.T.E.<br />Chi Chi<br /><br />Tech Lab</td>
+      <td colspan="2" rowspan="3" class="ppl">Internship Management<br />2:30-5:00</td>
+      <td class="tte A">T.T.E.<br />Chi Chi<br /><br />Tech Lab</td>
+      <td class="bc B">Bus. Comm.<br />Ashley<br /><br />Training Room #2</td>
+      <td colspan="2" class="gre">Guest Presenter Series<br />All Students<br />12:30-1:40</td>
+    </tr>
+    <tr>
+      <td>1:50</td>
+      <td colspan="2">Break<br />1:50-2:10</td>
+      <td colspan="2">Break<br />1:50-2:10</td>
+      <td colspan="2">Break<br />1:50-2:10</td>
+      <td colspan="2">Break<br />1:40-2:00</td>
+    </tr>
+    <tr>
+      <td>2:10</td>
+      <td class="bc A">Bus. Comm.<br />Ashley<br /><br />Training Room #2</td>
+      <td class="tte B">T.T.E.<br />Chi Chi<br /><br />Tech Lab</td>
+      <td class="tte A">T.T.E.<br />Chi Chi<br /><br />Tech Lab</td>
+      <td class="bc B">Bus. Comm.<br />Ashley<br /><br />Training Room #2</td>
+      <td class="bc A">Bus. Comm.<br />Ashley<br /><br />Training Room #2</td>
+      <td class="tte B">T.T.E.<br />Chi Chi<br /><br />Tech Lab</td>
+      <td colspan="2" class="ppl">Feedback<br />All Students<br />2:00-3:30</td>
+    </tr>
+  </tbody>
+</table>
+</div>

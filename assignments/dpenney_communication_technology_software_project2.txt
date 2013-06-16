@@ -1,0 +1,74 @@
+1)	In your groups discuss ways that your website can now generate capital. What are those ways and explain how they can be used to obtain profit. Each person should write their answers in Notepad.
+	a. Advertisements
+	b. E-commerce
+	c. Donations
+
+2)	Each group will locate 3 different application providers that allow your website to generate capitol for you.
+	a. Google AdSense (http://www.google.com/adsense/)
+	b. X-Cart (http://www.x-cart.com/)
+	c. Paypal (https://www.paypal.com/)
+
+3)	Complete a S.W.O.T analysis on the 3 different applications you can use to generate capitol through your website.
+
+S.W.O.T. Analysis on Paypal
+
+Strengths:
+- Secure transfers
+- Simple to open an account and get started
+- Highly recognized company, trusted
+
+Weaknesses:
+- Used by scammers
+
+Opportunities:
+- Accepted by many companies
+
+Threats:
+- Google Checkout, Yahoo small business
+- Hackers, it's a large target
+
+
+S.W.O.T. Analysis on X-Cart
+
+Strengths:
+- Has a free trial, allows you to try before you buy.
+- Many shipping carriers and payment providers.
+
+Weaknesses:
+- Expensive, costs ~$100 to $1500 for a subscription.
+
+Opportunities:
+- "Modules" allow you to enhance the user experience.
+
+Threats:
+- Less expensive options available.
+
+
+S.W.O.T. Analysis on Google AdSense
+
+Strengths:
+- Ads are relevant to site content.
+- Unwanted ads can be filtered out.
+
+Weaknesses:
+- Revenue is based on how many people click the ads.
+- Must reach $100 before being able to receive money from it.
+
+Opportunities:
+- High quality ads that are easy to customize.
+- Data reports on ad performance.
+
+Threats:
+- Amazon Associates, Clickbank
+
+
+4)	Every person will locate a free web hosting provider and create your own web site. Be creative and professional. Everyone’s website should include the 3 S.W.O.T analysis that you have completed in question #3.
+
+http://danielpenney.sytes.net/index.php?page=current
+
+5)	Start to outline everything you have done at your time here with Year Up. On your website. So any past assignments you have completed so far should also be duplicated onto your website.
+
+http://danielpenney.sytes.net/index.php?page=archived
+
+6)	Each individual will then have to be signed off on the Technology Task Checklist.
+N/A

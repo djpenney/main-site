@@ -1,0 +1,29 @@
+<div class="pure-u-1">
+<?php
+    $items = array();    
+    $files = glob('essays/*.html', GLOB_BRACE);
+    foreach($files as $file) {
+        $items[] = $file;
+    }
+?>
+        <div class="pure-menu pure-menu-open">
+            <ul>
+            <?php
+                $dom = new DOMDocument();
+                foreach ($items as $mitems) {
+                    $dom->loadHTML(file_get_contents($mitems));
+                    $hTwo= $dom->getElementsByTagName('h3');
+                    echo '<li><a href="essays#' . basename($mitems, ".html") . '">' . $hTwo->item(0)->nodeValue . '</a></li>';
+                }
+            ?>
+            </ul>
+        </div>
+        <div id="essay">
+            <?php
+                foreach ($items as $essays) {
+                    echo file_get_contents( $essays );
+                    echo "<hr>";
+                }
+            ?>
+        </div>
+</div>

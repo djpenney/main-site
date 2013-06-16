@@ -1,0 +1,3 @@
+What it Means to Image a Computer
+
+Imaging a computer is the act of restoring a system to a default software state.  This is an important tool in that it allows for system administrators to recover from software issues, maintain kiosk computers (so they're consistent each day), or fully restore a system before another person has to use it.

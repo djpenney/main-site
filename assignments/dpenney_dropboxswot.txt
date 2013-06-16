@@ -1,0 +1,18 @@
+S.W.O.T. Analysis on Dropbox
+
+Strengths:
+- Touts strong security, files are AES-256 encrypted.
+- Access to the site is via https, not plain http.  Nothing is sent as plain-text.
+- You can undelete files easily.
+
+Weaknesses:
+- Expensive for a paid subscription, only allows 5 users on the business and pro plans before having to pay more.
+- Very small file size (300MB).  This is however offset by a 2GB storage limit for free plan.
+
+Opportunities:
+- Can be used without paying, cost-effective in that regard.
+- Files are synced automatically, everyone would have the most recent changes instantly (more or less).
+
+Threats:
+- Files can't be updated without an active internet connection.
+- Desktop application can be slightly buggy.

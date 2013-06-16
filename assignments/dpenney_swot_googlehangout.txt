@@ -1,0 +1,41 @@
+1) Google Hangout
+
+2) S.W.O.T. Analysis on Google Hangout:
+
+Strengths:
+- Unpaid, high-quality video chat for large groups of users.
+- Worldwide video chat
+
+Weaknesses:
+- Requires a browser plugin instead of a dedicated application.
+- Limited to 10 video chat participants.
+
+Opportunities:
+- Free, only requires a Google login.
+
+Threats:
+- Skype is well extablished already, trying to break into an established market.
+
+SME (Subject Matter Expert)- A person who is an expert in a particular area or topic.
+
+Google Hangout Features:
+- Users can invite people outside their domain or organization.
+- All video and audio streams are encrypted and served over an https connection.
+- Basic service is limited to 10 video participants with no time limit on the chat.
+
+3) Foursquare:
+Allows you and your friends to connect through an app via a smart phone to share places you have been.
+The software even gives you recommendations on places where you should visit next based on your personal data and check-ins.
+Has been incorporated with businesses, brands, agencies etc. to allow them to engage with customers and fans.
+Foursquare even gives you the opportunity to allow developers build on their "Foursquare".
+Integrated badges and points for get the user more engaged.
+
+Salesforce:
+It's a safe secure site, for big companies/corporate offices that can be used with different departments of the company and have their own chat site and can discuss with others as well throughout the world. Also fast and reliable. 
+
+Brainkeeper:
+Allows you to do online collaboration without use of email. Ability to tag, change color scheme of website match colors. 
+Documents are seen with all edits annotated on to it, that way you can find out who edited the document. Can post 
+blogs for everyone to see. Able to create website with free trial and it's also User friendly.
+
+4) https://sites.google.com/site/ghangoutsme/
