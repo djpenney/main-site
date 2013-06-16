@@ -80,16 +80,46 @@ var resetPage = function() {
 };
 </script>
 
+<style scoped>
+
+/* Schedule */
+.schedule { text-align: center; }
+
+.schedule table {
+    background: #FFF;
+    font-family: Verdana, Geneva, sans-serif;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.schedule .ise { background: #f5b53d; }
+
+.schedule .pro { background: #de575b; }
+
+.schedule .bc { background: #f2c4da; }
+
+.schedule .illc { background: #a4bfe0; }
+
+.schedule .illf { background: #faef59; }
+
+.schedule .tte { background: #2478b3; }
+
+.schedule .ppl { background: #bfafcb; }
+
+.schedule .gre { background: #c2d461; }
+
+</style>
+
 <br>
 
-<button class="pure-button pure-button-primary" id="sectionA" onclick='hideClass("B");'>Only Section A</button>
-<button class="pure-button pure-button-primary" id="sectionB" onclick='hideClass("A");'>Only Section B</button>
-<button class="pure-button pure-button-secondary" id="resetPage" onclick='resetPage();'>Full Schedule</button>
+<button class="btn btn-primary" id="sectionA" onclick='hideClass("B");'>Only Section A</button>
+<button class="btn btn-primary" id="sectionB" onclick='hideClass("A");'>Only Section B</button>
+<button class="btn btn-danger" id="resetPage" onclick='resetPage();'>Full Schedule</button>
 
 <hr />
 
 <!-- In honor of our colleague, Jeff. -->
-<table border=1 id="sched">
+<table class="table table-bordered" id="sched">
   <tbody>
     <tr>
       <td></td>

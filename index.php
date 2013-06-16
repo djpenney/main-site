@@ -37,11 +37,10 @@
     <div id="wrap">
 
         <div class="container">
-            <div class="page-header">
-                <h1><b>Daniel Penney</b> - <i><?php echo $title; ?></i></h1>
-
-                <nav>
-                    <ul id="mlinks">
+            <div class="navbar navbar-fixed-top">
+                <div class="navbar-inner">
+                    <a class="brand" href="../resume"><b>Daniel Penney</b> - <i><?php echo $title; ?></i></a>
+                    <ul class="nav">
                         <?php
                             foreach ($parameters as $key => $value) {
                                 if( $in_menu[$key] == 'TRUE' ) {
@@ -50,10 +49,9 @@
                                 }
                             }
                         ?>
-                    </ul>
-                </nav>
-
-            </div> <!-- page-header -->
+                    </ul> <!-- nav -->
+                </div> <!-- navbar-inner -->
+            </div> <!-- navbar -->
             <?php include $page; ?>
         </div> <!-- container -->
 
@@ -69,5 +67,6 @@
     <!-- Bootstrap JS -->
     <script src="http://code.jquery.com/jquery.js"></script>
     <script src="js/bootstrap.min.js"></script>
+
 </body>
 </html>
