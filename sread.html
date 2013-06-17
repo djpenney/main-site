@@ -1,47 +1,43 @@
-<div class="pure-u-1">
-    <div class="pure-g-r">
-        <div class="pure-u-1">
+<div class="sread">
+    <div class="row">
+        <div class="span12">
             <h3>Speed Read Assistant</h3>
             <div id="text_output"></div> <!-- Output chunks of text here -->
             <br />
-            <textarea id="uText" rows="10" cols="100"></textarea>
+            <textarea id="uText" rows="10" class="span8"></textarea>
             <div id="controls">
-                <button id="cToStart"class ="pure-button pure-button-disabled">To Start</button>
-                <button id="cPlayPause" class="pure-button pure-button-primary">Play/Pause</button>
+                <button id="cToStart"class ="btn disabled">To Start</button>
+                <button id="cPlayPause" class="btn btn-success"><i class="icon-play"></i>Play/Pause</button>
             </div>
         </div> <!-- pure-u-1 -->
     </div> <!-- pure-g-r -->
     <br />
-    <form class="pure-form pure-form-stacked"> <!-- Chunks to display = sChunk / (sWPM / 60) -->
+    <form> <!-- Chunks to display = sChunk / (sWPM / 60) -->
         <fieldset>
             <legend>Settings</legend>
-            <div class="pure-g-r">
-                <div class="pure-u-1-2">
+            <div class="row">
+                <div class="span6">
                     <label for="sWPM">Words Per Minute (WPM)</label>
                     <input id="sWPM" type="text" value="300">
                 </div>
-                <div class="pure-u-1-2">
+                <div class="span6">
                     <label for="sChunk">Words to Display at Once</label>
                     <input id="sChunk" type="text" value="5">
                 </div>
-            </div> <!-- pure-g-r -->
+            </div> <!-- row -->
         </fieldset>
-    </form> <!-- pure-form -->
-    <div class="pure-g-r">
-        <div class="pure-u-1">
-            <hr />
-            <h4>About</h4>
-            <p>This project is meant to duplicate the functionality of <a href="http://accelareader.com/" target="_blank">AccelaReader</a>.</p>
-            <dl>
-                <dt><b>List of current issues:</b></dt>
-                <dd>First chunk is not displayed</dd>
-                <dd>No pause button</dd>
-                <dd>Can't go back to beginning</dd>
-                <dd>Doesn't display the end of the line if chunk size is greater than remaining entries in array</dd>
-                <dd>Runs multiple times if Play/Pause clicked multiple times.</dd>
-            </dl>
-        </div>
-    </div>
+    </form> 
+    <hr />
+    <h4>About</h4>
+    <p>This project is meant to duplicate the functionality of <a href="http://accelareader.com/" target="_blank">AccelaReader</a>.</p>
+    <dl>
+        <dt><b>List of current issues:</b></dt>
+        <dd>First chunk is not displayed</dd>
+        <dd>No pause button</dd>
+        <dd>Can't go back to beginning</dd>
+        <dd>Doesn't display the end of the line if chunk size is greater than remaining entries in array</dd>
+        <dd>Runs multiple times if Play/Pause clicked multiple times.</dd>
+    </dl>
 </div>
 
 <script language="javascript">

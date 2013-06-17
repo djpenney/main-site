@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <!-- Bootstrap CSS -->
-    <link href="css/bootstrap.css" rel="stylesheet" />
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
     <link href="css/default.css" rel="stylesheet" />
     <link href="css/bootstrap-responsive.css" rel="stylesheet" />
 
@@ -65,7 +65,7 @@
     </div> <!-- footer -->
 
     <!-- Bootstrap JS -->
-    <script src="http://code.jquery.com/jquery.js"></script>
+    <script src="http://code.jquery.com/jquery-1.10.0.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
 
 </body>
