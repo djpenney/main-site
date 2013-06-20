@@ -58,7 +58,7 @@
         <div id="push"></div>
     </div> <!-- wrap -->
 
-    <div id="footer">
+    <div id="footer" class="navbar navbar-fixed-bottom">
         <div class="container">
             <p class="muted credit">&copy; 2013 - Daniel Penney</p>
         </div> <!-- container -->
