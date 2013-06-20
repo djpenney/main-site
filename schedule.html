@@ -136,25 +136,29 @@ var hasRun = false;
 var classA = document.getElementsByClassName("A");
 var classB = document.getElementsByClassName("B");
 
-document.getElementById("sectionA").onclick = function() {
-    classHide( classA, classB );
-}
-
-document.getElementById("sectionB").onclick = function() {
-    classHide( classB, classA );
-}
-
-var classHide = function( show, hide ) {
-    for ( var x = 0; x < hide.length; x += 1) {
+var classHide = function(show, hide) {
+    "use strict";
+    var x = 0;
+    for (x; x < hide.length; x += 1) {
         hide[x].style.display = 'none';
         if (hasRun) { show[x].style.display = 'table-cell'; }
         show[x].setAttribute("colspan", 2);
     }
 
     hasRun = true;
-}
+};
 
- document.getElementById("resetPage").onclick = function() {
+document.getElementById("sectionA").onclick = function() {
+    "use strict";
+    classHide(classA, classB);
+};
+
+document.getElementById("sectionB").onclick = function() {
+    "use strict";
+    classHide(classB, classA);
+};
+
+document.getElementById("resetPage").onclick = function() {
     "use strict";
 
     // Reset hasRun and clear all attributes
