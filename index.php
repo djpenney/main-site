@@ -31,7 +31,8 @@
 
         echo '<title>Daniel Penney - ' . $title . '</title>';
     ?>
-
+    <!-- http://blog.colin-gourlay.com/blog/2012/02/safely-using-ready-before-including-jquery/ -->
+    <script>(function(w,d,u){w.readyQ=[];w.bindReadyQ=[];function p(x,y){if(x=="ready"){w.bindReadyQ.push(y);}else{w.readyQ.push(x);}};var a={ready:p,bind:p};w.$=w.jQuery=function(f){if(f===d||f===u){return a}else{p(f)}}})(window,document)</script>
 </head>
 <body>
     <div id="wrap">
@@ -68,5 +69,7 @@
     <script src="http://code.jquery.com/jquery-1.10.0.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
 
+    <!-- http://blog.colin-gourlay.com/blog/2012/02/safely-using-ready-before-including-jquery/ -->
+    <script>(function($,d){$.each(readyQ,function(i,f){$(f)});$.each(bindReadyQ,function(i,f){$(d).bind("ready",f)})})(jQuery,document)</script>
 </body>
 </html>
