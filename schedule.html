@@ -21,13 +21,13 @@
 
 <div class="schedule row-fluid">
 
-<div class="btn-group" data-toggle="buttons-radio">
-    <button class="btn btn-primary" id="sectionA">Only Section A</button>
-    <button class="btn btn-primary" id="sectionB">Only Section B</button>
-    <button class="btn btn-danger" id="resetPage">Full Schedule</button>
-</div>
+    <div class="btn-group" data-toggle="buttons-radio">
+        <button class="btn btn-primary" id="sectionA">Only Section A</button>
+        <button class="btn btn-primary" id="sectionB">Only Section B</button>
+        <button class="btn btn-danger" id="resetPage">Full Schedule</button>
+    </div>
 
-<hr />
+    <hr />
 
 <!-- In honor of our colleague, Jeff. -->
 <table class="table table-bordered">
@@ -131,44 +131,24 @@
 
 <!-- http://www.jshint.com/  |  http://www.jslint.com/ -->
 <script>
-/*global document: false */
-var hasRun = false;
-var classA = document.getElementsByClassName("A");
-var classB = document.getElementsByClassName("B");
-
-var classHide = function(show, hide) {
-    "use strict";
-    var x = 0;
-    for (x; x < hide.length; x += 1) {
-        hide[x].style.display = 'none';
-        if (hasRun) { show[x].style.display = 'table-cell'; }
-        show[x].setAttribute("colspan", 2);
-    }
-
-    hasRun = true;
-};
-
 document.getElementById("sectionA").onclick = function() {
-    "use strict";
-    classHide(classA, classB);
+    $('.A').show();
+    $('.B').hide();
+
+    $('.A').attr("colspan", "2");
 };
 
 document.getElementById("sectionB").onclick = function() {
-    "use strict";
-    classHide(classB, classA);
+    $('.A').hide();
+    $('.B').show();
+
+    $('.B').attr("colspan", "2");
 };
 
 document.getElementById("resetPage").onclick = function() {
-    "use strict";
-
-    // Reset hasRun and clear all attributes
-    var z = 0;
-
-    for (z; z < classA.length; z += 1) {
-        classA[z].style.display = 'table-cell';
-        classA[z].setAttribute("colspan", 1);
-        classB[z].style.display = 'table-cell';
-        classB[z].setAttribute("colspan", 1);
-    }
+    $('.A').show();
+    $('.B').show();
+    $('.A').attr("colspan", "1");
+    $('.B').attr("colspan", "1");
 };
 </script>
