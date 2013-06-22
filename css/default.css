@@ -3,14 +3,20 @@ body {
     height: 100%;
 }
 
+body { padding-top: 60px; }
+
 /* Wrapper for page content to push down footer */
 #wrap {
-    padding-top: 60px;
-    height: 70%;
+    min-height: 100%;
+    height: auto !important;
+    height: 100%;
+    /* Negative indent footer by it's height */
+    margin: 0 auto -60px;
 }
 
 /* Set the fixed height of the footer here */
-#push {
+#push,
+#footer {
     height: 60px;
 }
 #footer {
@@ -19,4 +25,19 @@ body {
 
 .brand {
     width: 300px;
+}
+
+/* Lastly, apply responsive CSS fixes as necessary */
+@media (max-width: 767px) {
+    #footer {
+        margin-left: -20px;
+        margin-right: -20px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+
+#footer p {
+    padding-top: 10px;
+    padding-left: 20px;
 }
