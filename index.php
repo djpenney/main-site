@@ -5,9 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <!-- Bootstrap CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet" />
     <link href="css/default.css" rel="stylesheet" />
-    <link href="css/bootstrap-responsive.css" rel="stylesheet" />
+    <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.min.css" rel="stylesheet">
 
     <!-- It -->
     <?php
@@ -67,7 +66,7 @@
 
     <!-- Bootstrap JS -->
     <script src="http://code.jquery.com/jquery-1.10.0.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
+    <script src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/js/bootstrap.min.js"></script>
 
     <!-- http://blog.colin-gourlay.com/blog/2012/02/safely-using-ready-before-including-jquery/ -->
     <script>(function($,d){$.each(readyQ,function(i,f){$(f)});$.each(bindReadyQ,function(i,f){$(d).bind("ready",f)})})(jQuery,document)</script>
