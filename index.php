@@ -65,7 +65,7 @@
     </div> <!-- footer -->
 
     <!-- Bootstrap JS -->
-    <script src="http://code.jquery.com/jquery-1.10.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
     <script src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/js/bootstrap.min.js"></script>
 
     <!-- http://blog.colin-gourlay.com/blog/2012/02/safely-using-ready-before-including-jquery/ -->
